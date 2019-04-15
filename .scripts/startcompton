@@ -1,0 +1,4 @@
+#!/bin/sh
+
+pidof compton && killall compton
+compton &

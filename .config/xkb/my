@@ -1,0 +1,22 @@
+xkb_keymap {
+	xkb_keycodes  { include "evdev+aliases(qwerty)"	};
+	xkb_types     { include "complete"	};
+	xkb_compat    { include "complete+ledcaps(group_lock)"	};
+	xkb_geometry  { include "pc(pc104)"	};
+
+	xkb_symbols "my"   {
+           include "pc+us+ru:2+inet(evdev)+capslock(grouplock)"	
+
+		     key <CAPS> { [ Escape ] };
+ 		     key <ESC> { [ Caps_Lock ] };
+           key <AC10> { [ colon, semicolon ] };
+           key <TLDE> { [ asciitilde, grave ] };
+           };
+};
+xkb_keymap {
+	xkb_keycodes  { include "evdev+aliases(qwerty)"	};
+	xkb_types     { include "complete"	};
+	xkb_compat    { include "complete+ledcaps(group_lock)"	};
+	xkb_symbols   { include "pc+us+ru:2+inet(evdev)+capslock(grouplock)"	};
+	xkb_geometry  { include "pc(pc104)"	};
+};

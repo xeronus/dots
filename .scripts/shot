@@ -1,0 +1,2 @@
+#!/bin/sh
+scrot '/home/xeronus/Pictures/screenshots/%F_%T_$wx$h.png' -s -e 'xclip -selection clipboard -target image/png -i $f'

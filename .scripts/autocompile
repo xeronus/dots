@@ -1,0 +1,10 @@
+#!/bin/sh
+file=$(readlink -f "$1")
+dir=$(dirname "$file")
+# Kill if already running
+pkill -f "entr pdflatex "$file >> /dev/null" " && exit
+# Compiling 2 times for fix LaTeX bugs
+for i in 1 2
+do
+   ls *.tex | entr pdflatex "$file" >> /dev/null
+done

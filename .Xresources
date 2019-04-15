@@ -1,0 +1,62 @@
+!! Transparency (0-255):
+st.alpha: 230
+!255
+!230
+Xft.dpi: 96
+! hintnone, hintslight, hintmedium, hintfull
+Xft.hintstyle: hintfull
+Xft.hinting: true
+! lcdnone, lcddefault, lcdlight, lcdlegacy
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+Xcursor.theme: pixelfun2-24px
+!Xterm settings
+XTerm.termName: xterm-256color
+XTerm.vt100.saveLines: 4096
+XTerm.vt100.locale: true
+XTerm.vt100.reverseVideo: true
+!XTerm.vt100.foreground: white
+!XTerm.vt100.background: black
+!XTerm.vt100.color0: rgb:28/28/28
+!! ...
+!XTerm.vt100.color15: rgb:e4/e4/e4
+
+! special
+*.foreground:   #ffffff
+!#dfdfaf
+*.background:   #000000
+!#1c1c1c
+*.cursorColor:  #dfdfaf
+
+! black
+*.color0:       #000000
+!#1c1c1c
+*.color8:       #878787
+
+! red
+*.color1:       #af5f5f
+*.color9:       #af5f5f
+
+! green
+*.color2:       #87875f
+*.color10:      #87875f
+
+! yellow
+*.color3:       #af875f
+*.color11:      #af875f
+
+! blue
+*.color4:       #878787
+*.color12:      #878787
+
+! magenta
+*.color5:       #af8787
+*.color13:      #af8787
+
+! cyan
+*.color6:       #87afaf
+*.color14:      #87afaf
+
+! white
+*.color7:       #dfdfaf
+*.color15:      #dfdfaf

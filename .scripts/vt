@@ -1,0 +1,3 @@
+#!/bin/sh
+link=$(xsel -b -o)
+mpv --osc --geometry=-0-0 --autofit=30% --title="vt" --ytdl=yes "$link"

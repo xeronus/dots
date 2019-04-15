@@ -1,0 +1,5 @@
+#!/bin/sh
+# If already running, end this and running instance.
+pkill -f "entr reload-browser Firefox" && exit
+ls *.html ./*/*.css ./*/*.js | entr reload-browser Firefox 
+
